@@ -1,0 +1,25 @@
+// *********************************
+// Nav
+// *********************************
+
+.nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  .logo {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 400;
+    color: $secondary-color;
+
+    @include respond-at-height(500px){
+      color: $main-color;
+    }
+
+    &__bold {
+      font-weight: 900;
+    }
+  }
+}

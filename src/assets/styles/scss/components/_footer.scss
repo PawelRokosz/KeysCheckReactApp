@@ -1,0 +1,28 @@
+// *********************************
+// Footer
+// *********************************
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  &__info {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 1em;
+    font-weight: 400;
+    color: $additional-color;
+  }
+
+  &__link {
+
+    &:hover{
+      color: $secondary-color;
+
+      @include respond-at-height(500px){
+        color: $main-color;
+      }
+    }
+  }
+}
